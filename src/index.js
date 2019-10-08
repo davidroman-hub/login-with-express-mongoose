@@ -5,7 +5,7 @@ const methodOverride = require ('method-override');
 const session = require ('express-session')
 //Initualizations
 const app = express();
-
+require('./database');
 //Settings
 app.set('port', process.env.PORT || 3010);
 /*  hay que decilre donde esta la carpeta views para las vistas*/ app.set('views', path.join(__dirname, 'views'))/* path.join sirve para conectar directorios */
